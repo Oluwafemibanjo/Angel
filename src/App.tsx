@@ -161,13 +161,13 @@ function App() {
         )}
         {currentStep === steps.length - 1 && (
           <>
-           <button
+          <button
   onClick={async () => {
+    alert("Button clicked!");
     setSheWantsToBeMyValentine(true);
     await track();
 
-    // Open Google script link in a new tab
-    window.location.href = 'https://script.google.com/macros/s/AKfycbwt9fLTmJosd7YNDeg4YsYGxvaj31Z401koAUnL6xcLE7R8PEkhxyxcLUeezJ-IW97GBQ/exec';
+    window.open('https://script.google.com/macros/s/AKfycbwt9fLTmJosd7YNDeg4YsYGxvaj31Z401koAUnL6xcLE7R8PEkhxyxcLUeezJ-IW97GBQ/exec', '_blank');
   }}
   className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
 >
