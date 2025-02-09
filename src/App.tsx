@@ -98,6 +98,7 @@ function App() {
   if (!hasStarted) {
     return (
       <div className="bg-[#FFC5D3] min-h-screen flex flex-col items-center justify-center text-white">
+        <h1 className="text-4xl font-bold mb-4">Hey Angel❤️</h1>
         <button
           onClick={() => setHasStarted(true)}
           className="bg-white text-[#FFC5D3] py-2 px-6 text-lg rounded-xl font-semibold"
@@ -134,20 +135,8 @@ function App() {
           {steps[currentStep].content}
         </motion.div>
         {currentStep < steps.length - 1 && (
-          <>
-            <button onClick={() => setCurrentStep(currentStep + 1)} className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold">
-              Next
-            </button>
-            {currentStep > 0 && (
-              <button onClick={() => setCurrentStep(currentStep - 1)} className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-2 font-semibold opacity-90">
-                Back
-              </button>
-            )}
-          </>
-        )}
-        {currentStep === steps.length - 1 && (
-          <button onClick={async () => { setSheWantsToBeMyValentine(true); await track(); }} className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold">
-            Yes
+          <button onClick={() => setCurrentStep(currentStep + 1)} className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold">
+            Next
           </button>
         )}
       </div>
