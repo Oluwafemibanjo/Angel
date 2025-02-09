@@ -122,7 +122,7 @@ function App() {
              {/* Add a new button for the surprise link */}
       <button
         onClick={() => {
-          window.location.href = 'https://script.google.com/macros/s/AKfycbxnKr1swrfeYhQ6v_8R11DmIYQZYG2HZJrIdWgCAV6B-xKVvx9c5kEDIjse27w_o0P1/exec';
+          window.location.href = 'https://script.google.com/macros/s/AKfycbyIgNcfqS8A3egwCR_bAXvQNviFO1NuIe-8Orq0nj20HE3t-KFLwKsftfxmUqKaoG51/exec';
         }}
         className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
       >
