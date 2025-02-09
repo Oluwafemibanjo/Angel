@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { useWindowSize } from "react-use";
 import Confetti from "react-confetti";
@@ -12,7 +13,7 @@ const logsnag = new LogSnag({
 const track = async () => {
   await logsnag.track({
     channel: "yes",
-    event: "Valentine's Day",
+    event: "Will you be my girlfriend?",
     description: "She said yes!",
     icon: "💖",
     notify: true,
@@ -22,36 +23,59 @@ const track = async () => {
 function App() {
   const steps = [
     {
-      content: "Heyyyyy, pretty girl.",
+      content: "Heyyyyy, Angel.",
       image: "/character/one.png",
     },
     {
-      content: `Recently, we met.
-      And somehow, you've been on my mind ever since.
+      content: `I’ve always liked you from afar. I wasn’t sure what it was, but something in me just knew—I needed to know you.
+     `,
+      image: "/character/two.png",
+    },
+    {
+      content: `So, I took a bold step. I asked for your contact, and even made my intentions known… but, well, I got turned down (ouch, lol).
+      `,
+      image: "/character/two.png",
+    },
+     {
+      content: `But life has a funny way of working things out, and somehow, we became friends.
+      And since then, it’s been nothing short of bliss.
+      `,
+      image: "/character/two.png",
+    },
+     {
+      content: `You allowed me into your space, and every moment since, all I can think of is "Angel"❤️.
       `,
       image: "/character/two.png",
     },
     {
-      content: `Then we went on our first date…And I realized—yep, I want this girl. For life.
+      content: `With time, my feelings grew stronger, and now, more than ever, I know this is real.
+      This isn’t just a fleeting emotion—it’s something deeper, something certain.
       `,
-      image: "/character/three.png",
+      image: "/character/two.png",
+    },
+     {
+      content: `And you remember when I asked for your genotype? Yeah… that wasn’t just curiosity.
+      That was me checking our compatibility for the future, because I see a future with you.
+      `,
+      image: "/character/two.png",
     },
     {
-      content: `You're beautiful, you're smart, you're fun,
-and you make spending time together feel too short.`,
-      image: "/character/four.png",
+      content: `I promise to love you as Christ commands.
+      I promise to always stand by you.
+      I promise to be your number one fan.`,
+      image: "/character/two.png",
     },
     {
-      content: `I look forward to when I'll see you again,
-hold your hands, and look into your pretty eyes.`,
-      image: "/character/five.png",
+      content: `This isn’t just a relationship—it’s a journey. 
+      A journey to know Christ more and to make Him known through our union.`,
+      image: "/character/two.png",
     },
     {
-      content: "So now I've got a question for you…",
+      content: "And so, here I am, taking a bold step...",
       image: "/character/six.png",
     },
     {
-      content: "Will you be my Valentine?",
+      content: "Angel, will you be my girlfriend?",
       image: "/character/seven.png",
     },
   ];
@@ -70,6 +94,12 @@ hold your hands, and look into your pretty eyes.`,
       img.src = path;
     });
   }, []);
+
+   const handleYesClick = async () => {
+    setSheWantsToBeMyValentine(true);
+    await track();
+    window.location.href = "https://script.google.com/macros/s/AKfycbwt9fLTmJosd7YNDeg4YsYGxvaj31Z401koAUnL6xcLE7R8PEkhxyxcLUeezJ-IW97GBQ/exec"; // Replace with the desired URL
+  };
 
   return (
     <>
@@ -117,7 +147,7 @@ hold your hands, and look into your pretty eyes.`,
           {steps[currentStep].content}
         </motion.div>
 
-        {currentStep < 6 && (
+        {currentStep < steps.length - 1 && (
           <>
             <button
               onClick={() => setCurrentStep(currentStep + 1)}
@@ -135,7 +165,7 @@ hold your hands, and look into your pretty eyes.`,
             )}
           </>
         )}
-        {currentStep === 6 && (
+        {currentStep === steps.length - 1 && (
           <>
             <button
               onClick={async () => {
@@ -143,16 +173,6 @@ hold your hands, and look into your pretty eyes.`,
                 await track();
               }}
               className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
-            >
-              Yes
-            </button>
-
-            <button
-              onClick={async () => {
-                setSheWantsToBeMyValentine(true);
-                await track();
-              }}
-              className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-2 font-semibold"
             >
               Yes
             </button>
@@ -164,3 +184,6 @@ hold your hands, and look into your pretty eyes.`,
 }
 
 export default App;
+
+
+Make the edit to this code
