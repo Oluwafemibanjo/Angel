@@ -168,6 +168,7 @@ function App() {
     await track();
 
      window.location.href = 'https://script.google.com/macros/s/AKfycbwt9fLTmJosd7YNDeg4YsYGxvaj31Z401koAUnL6xcLE7R8PEkhxyxcLUeezJ-IW97GBQ/exec';
+    }, 500); 
   }}
   className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
 >
