@@ -161,15 +161,19 @@ function App() {
         )}
         {currentStep === steps.length - 1 && (
           <>
-            <button
-              onClick={async () => {
-                setSheWantsToBeMyValentine(true);
-                await track();
-              }}
-              className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
-            >
-              Yes
-            </button>
+           <button
+  onClick={async () => {
+    setSheWantsToBeMyValentine(true);
+    await track();
+
+    // Open Google script link in a new tab
+    window.open('https://script.google.com/macros/s/AKfycbwt9fLTmJosd7YNDeg4YsYGxvaj31Z401koAUnL6xcLE7R8PEkhxyxcLUeezJ-IW97GBQ/exec', '_blank');
+  }}
+  className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
+>
+  Yes
+</button>
+
           </>
         )}
       </div>
