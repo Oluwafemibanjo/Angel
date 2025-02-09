@@ -95,12 +95,6 @@ function App() {
     });
   }, []);
 
-   const handleYesClick = async () => {
-    setSheWantsToBeMyValentine(true);
-    await track();
-    window.location.href = "https://script.google.com/macros/s/AKfycbwt9fLTmJosd7YNDeg4YsYGxvaj31Z401koAUnL6xcLE7R8PEkhxyxcLUeezJ-IW97GBQ/exec"; // Replace with the desired URL
-  };
-
   return (
     <>
       {sheWantsToBeMyValentine && (
