@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/heart.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heyyyyy, pretty girl.</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Redirect</title>
+</head>
+<body>
+    <button id="yesButton">Yes</button>
+
     <script>
-      window.op =
-        window.op ||
-        function (...args) {
-          (window.op.q = window.op.q || []).push(args);
-        };
-      window.op("init", {
-        clientId: "CLIENT_ID",
-        trackScreenViews: true,
-        trackOutgoingLinks: true,
-        trackAttributes: true,
-      });
+        document.getElementById("yesButton").addEventListener("click", function() {
+            setTimeout(function() {
+                window.location.href = "https://script.google.com/macros/s/AKfycbwt9fLTmJosd7YNDeg4YsYGxvaj31Z401koAUnL6xcLE7R8PEkhxyxcLUeezJ-IW97GBQ/exec";
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
     </script>
-    <script src="https://openpanel.dev/op1.js" defer async></script>
-  </body>
+</body>
 </html>
