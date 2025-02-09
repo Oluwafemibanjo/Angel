@@ -184,6 +184,3 @@ function App() {
 }
 
 export default App;
-
-
-Make the edit to this code
