@@ -109,8 +109,11 @@ function App() {
     );
   }
 
-  return (
-    <>
+ return (
+  <div className="relative min-h-screen flex flex-col items-center justify-center bg-[url('/public/IMG_6170.jpeg')] bg-cover bg-center">
+    {/* Black Overlay */}
+    <div className="absolute inset-0 bg-black opacity-50"></div>
+    
       <audio autoPlay loop>
         <source src="/Audio/For you.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
