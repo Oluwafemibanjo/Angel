@@ -57,6 +57,10 @@ function App() {
       content: 'This isn’t just a relationship—it’s a journey. A journey to know Christ more and to make Him known through our union.',
       image: "/character/two.png",
     },
+     {
+      content: 'Allow me to be your safe space, allow me to be the one you can always lean on. Allow me to walk this journey with you, through the highs and lows, through laughter and tears',
+      image: "/character/two.png",
+    },
     {
       content: "And so, here I am, taking a bold step...",
       image: "/character/six.png",
