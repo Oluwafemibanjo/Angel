@@ -26,41 +26,43 @@ function App() {
       image: "/character/four.png",
     },
     {
-      content: 'I’ve always liked you from afar. I wasn’t sure what it was, but something in me just knew—I needed to know you.
+      content: 'I’ve always liked you from afar. I wasn’t sure what it was, but something in me just knew—I needed to know you.'
      ,
       image: "/character/two.png",
     },
     {
-      content: 'So, I took a bold step. I asked for your contact, and even made my intentions known… but, well, I got turned down (ouch, lol).
+      content: 'So, I took a bold step. I asked for your contact, and even made my intentions known… but, well, I got turned down (ouch, lol).'
       ,
       image: "/character/two.png",
     },
      {
-      content: 'But life has a funny way of working things out, and somehow, we became friends. And since then, it’s been nothing short of bliss.
+      content: 'But life has a funny way of working things out, and somehow, we became friends. And since then, it’s been nothing short of bliss.'
       ,
       image: "/character/two.png",
     },
      {
-      content: 'You allowed me into your space, and every moment since, all I can think of is "Angel"❤️.
+      content: 'You allowed me into your space, and every moment since, all I can think of is "Angel"❤️.'
       ,
       image: "/character/two.png",
     },
     {
-      content: 'With time, my feelings grew stronger, and now, more than ever, I know this is real. This isn’t just a fleeting emotion—it’s something deeper, something certain.
+      content: 'With time, my feelings grew stronger, and now, more than ever, I know this is real. This isn’t just a fleeting emotion—it’s something deeper, something certain.'
       ,
       image: "/character/two.png",
     },
      {
-      content: 'And you remember when I asked for your genotype? Yeah… that wasn’t just curiosity. That was me checking our compatibility for the future, because I see a future with you.
+      content: 'And you remember when I asked for your genotype? Yeah… that wasn’t just curiosity. That was me checking our compatibility for the future, because I see a future with you.'
       ,
       image: "/character/two.png",
     },
     {
-      content: 'I promise to love you as Christ commands. I promise to always stand by you. I promise to be your number one fan.,
+      content: 'I promise to love you as Christ commands. I promise to always stand by you. I promise to be your number one fan.'
+        ,
       image: "/character/two.png",
     },
     {
-      content: 'This isn’t just a relationship—it’s a journey. A journey to know Christ more and to make Him known through our union.,
+      content: 'This isn’t just a relationship—it’s a journey. A journey to know Christ more and to make Him known through our union.'
+        ,
       image: "/character/two.png",
     },
     {
