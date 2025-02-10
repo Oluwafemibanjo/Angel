@@ -102,7 +102,6 @@ function App() {
         <button
           onClick={() => setHasStarted(true)}
           className="bg-white text-pink-600 py-3 px-6 text-xl rounded-xl mt-4 font-semibold">
-        >
           Tap to Start
         </button>
       </div>
