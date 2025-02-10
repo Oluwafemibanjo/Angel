@@ -101,7 +101,7 @@ function App() {
         <h1 className="text-4xl font-bold mb-4">Welcome Angel❤️</h1>
         <button
           onClick={() => setHasStarted(true)}
-          className="bg-white text-[#FFC5D3] py-2 px-6 text-lg rounded-xl font-semibold"
+          className="bg-white text-pink-600 py-3 px-6 text-xl rounded-xl mt-4 font-semibold">
         >
           Tap to Start
         </button>
@@ -135,7 +135,7 @@ function App() {
               />
             
             <button onClick={() => window.location.href = 'https://script.google.com/macros/s/AKfycbyIgNcfqS8A3egwCR_bAXvQNviFO1NuIe-8Orq0nj20HE3t-KFLwKsftfxmUqKaoG51/exec'} 
-              className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold">
+              className="bg-white text-pink-600 py-3 px-6 text-xl rounded-xl mt-4 font-semibold">
               Open for a Surprise!
             </button>
           </div>
@@ -165,14 +165,14 @@ function App() {
   <>
     <button 
       onClick={() => setCurrentStep(currentStep + 1)} 
-      className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
+      className="bg-white text-pink-600 py-3 text-xl rounded-xl w-full mt-10 font-semibold"
     >
       Next
     </button>
     {currentStep > 0 && (
       <button
         onClick={() => setCurrentStep(currentStep - 1)}
-        className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-2 font-semibold opacity-90"
+        className="bg-white text-pink-600 py-3 text-xl rounded-xl w-full mt-2 font-semibold opacity-90"
       >
         Back
       </button>
@@ -190,7 +190,7 @@ function App() {
         console.error("Error tracking response:", error);
       }
     }}
-    className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
+    className="bg-white text-pink-600 py-3 text-xl rounded-xl w-full mt-10 font-semibold"
   >
     Yes
   </button>
