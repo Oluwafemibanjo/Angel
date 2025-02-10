@@ -97,7 +97,7 @@ function App() {
 
   if (!hasStarted) {
     return (
-      <div className="bg-[#FFC5D3] min-h-screen flex flex-col items-center justify-center text-white">
+     <div className="custom-bg min-h-screen flex flex-col items-center justify-center text-white">
         <h1 className="text-4xl font-bold mb-4">Welcome Angel❤️</h1>
         <button
           onClick={() => setHasStarted(true)}
@@ -119,7 +119,7 @@ function App() {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}
           >
           <Confetti width={width} height={height} />
-          <div className="fixed top-0 left-0 w-full h-full bg-[#FFC5D3] flex flex-col items-center justify-center">
+         <div className="fixed top-0 left-0 w-full h-full custom-bg flex flex-col items-center justify-center">
             <motion.h1 
               initial={{ scale: 0 }} 
               animate={{ scale: 1 }} 
@@ -141,7 +141,7 @@ function App() {
           </div>
         </motion.div>
       )}
-      <div className="bg-[#FFC5D3] min-h-screen text-white p-5 flex flex-col items-center justify-center max-w-md mx-auto">
+     <div className="custom-bg min-h-screen text-white p-5 flex flex-col items-center justify-center max-w-md mx-auto">
         <motion.img 
           key={currentStep} 
           initial={{ opacity: 0, y: 20 }} 
