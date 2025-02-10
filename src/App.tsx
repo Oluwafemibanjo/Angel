@@ -42,11 +42,19 @@ function App() {
       image: "/character/two.png",
     },
     {
-      content: 'With time, my feelings grew stronger, and now, more than ever, I know this is real. This isn’t just a fleeting emotion—it’s something deeper, something certain.',
+      content: 'With time, my feelings grew stronger, and now, more than ever, I know this is real.',
+      image: "/character/two.png",
+    },
+     {
+      content: 'This isn’t just a fleeting emotion—it’s something deeper, something certain.',
       image: "/character/two.png",
     },
     {
-      content: 'And you remember when I asked for your genotype? Yeah… that wasn’t just curiosity. That was me checking our compatibility for the future, because I see a future with you.',
+      content: 'And you remember when I asked for your genotype? Yeah… that wasn’t just curiosity.',
+      image: "/character/two.png",
+    },
+     {
+      content: 'That was me checking our compatibility for the future, because I see a future with you.',
       image: "/character/two.png",
     },
     {
@@ -58,7 +66,11 @@ function App() {
       image: "/character/two.png",
     },
      {
-      content: 'Allow me to be your safe space, allow me to be the one you can always lean on. Allow me to walk this journey with you, through the highs and lows, through laughter and tears',
+      content: 'Allow me to be your safe space, allow me to be the one you can always lean on.',
+      image: "/character/two.png",
+    },
+     {
+      content: 'Allow me to walk this journey with you, through the highs and lows, through laughter and tears',
       image: "/character/two.png",
     },
     {
