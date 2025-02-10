@@ -98,7 +98,7 @@ function App() {
   if (!hasStarted) {
     return (
       <div className="bg-[#FFC5D3] min-h-screen flex flex-col items-center justify-center text-white">
-        <h1 className="text-4xl font-bold mb-4">Hey Angel❤️</h1>
+        <h1 className="text-4xl font-bold mb-4">Welcome Angel❤️</h1>
         <button
           onClick={() => setHasStarted(true)}
           className="bg-white text-[#FFC5D3] py-2 px-6 text-lg rounded-xl font-semibold"
@@ -116,28 +116,79 @@ function App() {
         Your browser does not support the audio element.
       </audio>
       {sheWantsToBeMyValentine && (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}
+          >
           <Confetti width={width} height={height} />
           <div className="fixed top-0 left-0 w-full h-full bg-[#FFC5D3] flex flex-col items-center justify-center">
-            <motion.h1 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.3, type: "spring" }} className="text-white text-4xl font-bold">
+            <motion.h1 
+              initial={{ scale: 0 }} 
+              animate={{ scale: 1 }} 
+              transition={{ delay: 0.3, type: "spring" }} 
+              className="text-white text-4xl font-bold"
+              >
               Yayyyyyyy!!!!!
             </motion.h1>
-            <img src="/character/yayyyy.png" alt="" className="w-40 animate-bounce" />
-            <button onClick={() => window.location.href = 'https://script.google.com/macros/s/AKfycbyIgNcfqS8A3egwCR_bAXvQNviFO1NuIe-8Orq0nj20HE3t-KFLwKsftfxmUqKaoG51/exec'} className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold">
+            <img 
+              src="/character/yayyyy.png" 
+              alt="" 
+              className="w-40 animate-bounce" 
+              />
+            
+            <button onClick={() => window.location.href = 'https://script.google.com/macros/s/AKfycbyIgNcfqS8A3egwCR_bAXvQNviFO1NuIe-8Orq0nj20HE3t-KFLwKsftfxmUqKaoG51/exec'} 
+              className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold">
               Open for a Surprise!
             </button>
           </div>
         </motion.div>
       )}
       <div className="bg-[#FFC5D3] min-h-screen text-white p-5 flex flex-col items-center justify-center max-w-md mx-auto">
-        <motion.img key={currentStep} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={steps[currentStep].image} alt="" className="w-40" />
-        <motion.div key={currentStep + "-text"} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="font-josefin text-4xl font-bold">
+        <motion.img 
+          key={currentStep} 
+          initial={{ opacity: 0, y: 20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.5 }} 
+          src={steps[currentStep].image}
+          alt="" 
+          className="w-40" 
+          />
+        <motion.div 
+          key={currentStep + "-text"} 
+          initial={{ opacity: 0, x: -20 }} 
+          animate={{ opacity: 1, x: 0 }} 
+          transition={{ duration: 0.5, delay: 0.2 }} 
+          className="font-josefin text-4xl font-bold"
+          >
           {steps[currentStep].content}
         </motion.div>
+        
         {currentStep < steps.length - 1 && (
-          <button onClick={() => setCurrentStep(currentStep + 1)} className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold">
+          <button 
+            onClick={() => setCurrentStep(currentStep + 1)} 
+            className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
+            >
             Next
           </button>
+        {currentStep > 0 && (
+              <button
+                onClick={() => setCurrentStep(currentStep - 1)}
+                className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-2 font-semibold opacity-90"
+              >
+                Back
+              </button>
+            )}
+          </>
+        )}
+        {currentStep === steps.length - 1 && (
+          <>
+          <button
+  onClick={async () => {
+    setSheWantsToBeMyValentine(true);
+    await track();
+  }}
+  className="bg-white text-[#FFC5D3] py-3 text-xl rounded-xl w-full mt-10 font-semibold"
+>
+  Yes
+</button>
         )}
       </div>
     </>
