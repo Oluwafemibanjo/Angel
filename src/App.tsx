@@ -87,17 +87,12 @@ function App() {
   const [hasStarted, setHasStarted] = useState(false);
   const { width, height } = useWindowSize();
 
-  useEffect(() => {
-    const imagePaths = [
-      ...steps.map((step) => step.image),
-      "/character/yayyyy.png",
-    ];
-
-    imagePaths.forEach((path) => {
-      const img = new Image();
-      img.src = path;
-    });
-  }, []);
+  <img
+  src={steps[currentStep].image}
+  alt=""
+  className="w-40"
+  loading="lazy" // Lazy load image
+/>
 
   if (!hasStarted) {
     return (
