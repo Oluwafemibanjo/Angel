@@ -167,24 +167,24 @@ function App() {
             {steps[currentStep].content}
           </motion.div>
 
-          {currentStep < steps.length - 1 && (
-            <>
-              <button
-                onClick={() => setCurrentStep(currentStep + 1)}
-                className="bg-white text-pink-600 py-3 text-xl rounded-xl w-full mt-10 font-semibold"
-              >
-                Next
-              </button>
-              {currentStep > 0 && (
-                <button
-                  onClick={() => setCurrentStep(currentStep - 1)}
-                  className="bg-white text-pink-600 py-3 text-xl rounded-xl w-full mt-2 font-semibold opacity-90"
-                >
-                  Back
-                </button>
-              )}
-            </>
-          )}
+         {currentStep < steps.length - 1 && (
+  <div className="flex justify-between w-full mt-10">
+    {currentStep > 0 && (
+      <button
+        onClick={() => setCurrentStep(currentStep - 1)}
+        className="bg-white text-pink-600 py-3 text-xl rounded-xl w-1/2 font-semibold opacity-90"
+      >
+        Back
+      </button>
+    )}
+    <button 
+      onClick={() => setCurrentStep(currentStep + 1)} 
+      className="bg-white text-pink-600 py-3 text-xl rounded-xl w-1/2 font-semibold"
+    >
+      Next
+    </button>
+  </div>
+)}
 
           {currentStep === steps.length - 1 && (
             <button
