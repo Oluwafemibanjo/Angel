@@ -23,6 +23,7 @@ function App() {
   const steps = [
     {
       content: "Heyyyyy, Angel.",
+      image: "/character/two.png",
     },
     {
       content: `I’ve always liked you from afar. I wasn’t sure what it was, but something in me just knew—I needed to know you.
