@@ -39,33 +39,6 @@ body {
   z-index: 2;
 }
 
-/* Yay background and overlay for yay page only */
-.yay-background {
-  background-image: url('public/image 2.jpeg'); /* Yay background image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-/* Overlay for yay page */
-.yay-background::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for yay page */
-  z-index: 1; /* Above background */
-}
-
-/* Ensuring content is above the overlay on yay page */
-.yay-background > * {
-  position: relative;
-  z-index: 2;
-}
-
 :root {
   --font-josefin: 'Josefin Sans', sans-serif;
 }
